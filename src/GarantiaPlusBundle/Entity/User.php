@@ -5,7 +5,7 @@ namespace GarantiaPlusBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use CallCenter\Bundle\CommonBundle\Entity\BaseUser;
 
-/*
+/**
  * @ORM\Entity
  */
 class User extends BaseUser
@@ -17,7 +17,7 @@ class User extends BaseUser
      *      type="integer"
      * )
      * @ORM\GeneratedValue(
-     *      strategy="IDENTITY
+     *      strategy="IDENTITY"
      * )
      */
     protected $id;

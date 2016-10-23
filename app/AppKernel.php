@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Fresh\DoctrineEnumBundle\FreshDoctrineEnumBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new CallCenter\Bundle\CommonBundle\CommonBundle(),
