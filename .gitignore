@@ -8,24 +8,12 @@
 /app/spool/*
 
 # Cache, session files and logs (Symfony3)
-/var/
-!/var/cache
-/var/cache/
+/var/cache/*
+/var/logs/*
+/var/sessions/*
 !var/cache/.gitkeep
-!/var/logs
-/var/logs/
 !var/logs/.gitkeep
-!/var/sessions
-/var/sessions/
 !var/sessions/.gitkeep
-!var/SymfonyRequirements.php
-
-!/var/gp/reports/info.info
-/var/proteccion/microvozcsv/*
-!/var/proteccion/microvozcsv/info.info
-/var/proteccion/vocalcomcsv/*
-!/var/proteccion/vocalcomcsv/info.info
-/var/gp/reports/*
 
 # Parameters
 /app/config/parameters.yml
@@ -41,7 +29,6 @@
 
 # Assets and user uploads
 /web/bundles/
-!/web/bundles/financialProtection
 /web/uploads/
 
 # Assets managed by Bower
@@ -56,18 +43,10 @@
 
 # Composer PHAR
 /composer.phar
-composer.lock
+
 # Backup entities generated with doctrine:generate:entities command
 */Entity/*~
-*.php~
 
-/.buildpath
-/.project
-/.settings
+*.sublime*
 
-# Project files
-*.sublime-*
-
-tests/_output/*
-
-update.sh
+composer.lock
