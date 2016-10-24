@@ -112,3 +112,9 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: GarantiaPlusBundle\Entity\User
+
+# Web Socket Configuration
+gos_web_socket:
+    server:
+        port: 8084        #The port the socket server will listen on
+        host: 127.0.0.1   #The host ip to bind to
